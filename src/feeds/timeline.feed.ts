@@ -36,6 +36,7 @@ export class TimelineFeed extends Feed<TimelineFeedResponse, TimelineFeedRespons
       recovered_from_crash: options.recoveredFromCrash,
       push_disabled: options.pushDisabled,
       latest_story_pk: options.latestStoryPk,
+      pagination_source: "following"
     };
     if (this.nextMaxId) {
       form = Object.assign(form, {
